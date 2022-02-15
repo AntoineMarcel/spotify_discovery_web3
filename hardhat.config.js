@@ -3,5 +3,12 @@ require("dotenv").config();
 
 module.exports = {
   solidity: "0.8.0",
-  
+  networks: {
+    rinkeby: {
+      url: process.env.STAGING_ALCHEMY_KEY,
+      accounts: [process.env.PRIVATE_KEY]
+    },
+  },
 };
+
+// 0x450417Aa753738e93AD13A1415Bfc251D4e26A45
